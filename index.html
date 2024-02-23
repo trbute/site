@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>tr</title>
+</head>
+
+<body>
+    <div class="body-container">
+        <div class="title">
+            <h1><a class="link" href="https://github.com/trbute">trbute</a></h1>
+        </div>
+        <hr>
+        <div class="project-container">
+            <h2>Projects</h2>
+            <h3>
+                <a class="link" href="https://life.trbute.com">Life</a>
+                <span> - A JavaScript implementation of Conway's Game of Life. </span>
+            </h3>
+            <div class="project-body">
+                <div>A grid-based cellular automaton where each cell exists in one of two states - alive or dead.</div>
+                <br>
+                <div>For each generation, the state of each cell is determined by the following rules: </div>
+                <ul>
+                    <li>
+                        Each living cell with one or no neighbors dies, as if by solitude.
+                    </li>
+                    <li>
+                        Each living cell with four or more neighbors dies, as if by overpopulation.
+                    </li>
+                    <li>
+                        Each living cell with two or three neighbors survives.
+                    </li>
+                    <li>
+                        Each dead cell with three neighbors becomes populated.
+                    </li>
+                </ul>
+                <div>
+                    The can be boiled down to two rules that define the criteria for each state to change:
+                </div>
+                <ul>
+                    <li>Living cells die with less than 2 or more than 3 living neighbors.</li>
+                    <li>Dead cells become alive with exactly 3 living neighbors.</li>
+                </ul>
+                <div>This implementation uses HTML 5 Canvas to draw the grid and game state.</div>
+                <div>Cells can be drawn or removed by left or right-clicking on the canvas.</div>
+                <div>Middle mouse click and scroll wheel allow for pan and zoom.</div>
+                <div>Various on-screen controls allow for navigating through the game state.</div>
+                <br>
+                <a class="link source-link" href="https://github.com/trbute/life">(source code)</a>
+            </div>
+        </div>
+</body>
+
+</html>
